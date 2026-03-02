@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const apps = [
   {
     id: "quizy",
@@ -17,19 +19,19 @@ Co znajdziesz w QuizY?
 Kategorie: Flagi, Historia, Lektury, Język Polski, Anatomia, Bezpieczeństwo, Granice państw, Biologia, Informatyka, Polscy nobliści, Wynalazcy, Angielski, Hiszpański, Fizyka, Chemia i wiele innych.
 
 QuizY – ucz się, sprawdzaj się, rozwijaj.`,
-    icon: "/quizy/logo.png",
+    icon: base + "quizy/logo.png",
     googlePlayUrl: "https://play.google.com/store/apps/details?id=com.quizy.app",
     regulationsUrl: "/regulamin",
     privacyPolicyUrl: "/polityka-prywatnosci",
     screenshots: [
-      "/quizy/screen1.png",
-      "/quizy/screen2.png",
-      "/quizy/screen3.png",
-      "/quizy/screen4.png",
-      "/quizy/screen5.png",
-      "/quizy/screen6.png",
-      "/quizy/screen7.png",
-      "/quizy/screen8.png",
+      base + "quizy/screen1.png",
+      base + "quizy/screen2.png",
+      base + "quizy/screen3.png",
+      base + "quizy/screen4.png",
+      base + "quizy/screen5.png",
+      base + "quizy/screen6.png",
+      base + "quizy/screen7.png",
+      base + "quizy/screen8.png",
     ],
   },
 ];
