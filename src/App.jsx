@@ -12,7 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL.replace(/\/$/, "")}>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
